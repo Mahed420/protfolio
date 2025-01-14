@@ -80338,7 +80338,7 @@ return A.J(m.vD(0.2),$async$qb)
 case 6:s=7
 return A.J(o.e.vw(B.jI),$async$qb)
 case 7:s=8
-return A.J(o.e.uM(new A.MS("https://raw.githubusercontent.com/Mahed420/protfolio/main/background.mp3",null)),$async$qb)
+return A.J(o.e.uM(new A.MS("https://drive.google.com/uc?export=download&id=12FqsyFjwjv1pqHun0t20CI09mjlGmUOI",null)),$async$qb)
 case 8:o.ad(new A.ajb(o))
 q=1
 s=5
@@ -80506,7 +80506,7 @@ $0(){this.a.c.IM(B.iH,B.d3,0)},
 $S:0}
 A.xr.prototype={
 aa(){var s=t.s
-return new A.PM(A.b(["assets/images/face.png","assets/images/twit.png","assets/images/in.png","assets/images/insta.png","assets/images/git.png"],s),A.b(["https://www.facebook.com","https://www.twitter.com/yourprofile","https://www.linkedin.com/in/yourprofile","https://www.instagram.com/in/yourprofile","https://www.github.com/in/yourprofile"],s),null,null)}}
+return new A.PM(A.b(["assets/images/face.png","assets/images/twit.png","assets/images/in.png","assets/images/insta.png","assets/images/git.png"],s),A.b(["https://www.facebook.com/share/15jvKww6Fi/","https://wa.me/+8801791960442","https://www.linkedin.com/in/md-mahed-3146a9228/","https://www.instagram.com/mahedsr420/","https://github.com/Mahed420"],s),null,null)}}
 A.PM.prototype={
 J(a){var s=null,r=A.bk(a,s,t.w).w
 return A.j0(B.bG,A.b([A.el(s,s,B.t,s,s,B.lc,s,s,s,s,s,s,s),new A.on(new A.ahM(this,r.a),s)],t.p),B.B,B.bC)},
@@ -80517,8 +80517,8 @@ n=o?50:45
 m=o?50:45
 l=new A.b9(o?B.av:B.t6,2,B.A,-1)
 k=r[q]
-j=o?25:20
-i=o?25:20
+j=o?20:15
+i=o?20:15
 a3[q]=A.of(!1,new A.c5(p,p,p,p),!0,new A.bV(B.mk,A.G9(g,A.IR(k,o?B.av:B.lH,g,i,j),g,B.S,new A.d3(B.fe,g,new A.d2(l,l,l,l),g,g,g,B.f_),B.bh,g,m,g,g,n),g),g,!0,g,g,g,g,g,g,g,new A.ahJ(h,q),g,new A.ahK(h,q),g,g,g,g,g)}return A.ej(A.b([f,e,d,c,a,a0,a1,a2,A.apO(!0,A.aV(A.fO(a3,B.V,B.O,B.ab),50,g),g,B.bP,B.q,B.fr,100,!1,g),A.aV(g,18,g),A.apO(!0,A.Ge("Download CV",new A.ahL()),g,B.bP,B.q,B.CF,100,!1,g)],b),B.c6,B.O,B.bm)}}
 A.ahM.prototype={
 $2(a,b){var s=null,r=$.a_().pA(15,15,B.bZ),q=this.a,p=this.b,o=t.p
@@ -80634,10 +80634,10 @@ s===$&&A.a()
 return new A.bV(B.mh,s[b],null)},
 $S:510}
 A.yu.prototype={
-aa(){var s="assets/images/work1.jpg",r="Project name",q="text title",p="assets/images/work2.jpg",o=new A.aU(new Float64Array(16))
-o.cV()
-o.aS(1)
-return new A.QA(o,A.b([new A.l3(s,r,q),new A.l3(p,r,q),new A.l3(s,r,q),new A.l3(p,r,q),new A.l3(s,r,q),new A.l3(p,r,q)],t.I2))}}
+aa(){var s="Project Sample",r="Dummy Project",q=new A.aU(new Float64Array(16))
+q.cV()
+q.aS(1)
+return new A.QA(q,A.b([new A.l3("assets/images/work1.jpg",s,r),new A.l3("assets/images/work2.png",s,r),new A.l3("assets/images/work3.jpg",s,r),new A.l3("assets/images/work4.png",s,r),new A.l3("assets/images/work5.jpeg",s,r),new A.l3("assets/images/work6.jpg",s,r)],t.I2))}}
 A.QA.prototype={
 J(a){var s,r=this,q=null,p=A.bk(a,q,t.w).w,o=$.a_().pA(10,10,B.bZ),n=A.aE(51,B.l.gm()>>>16&255,B.l.gm()>>>8&255,B.l.gm()&255)
 p=p.a.a*0.1
