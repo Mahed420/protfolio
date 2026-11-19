@@ -1,52 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Base href for your web app -->
-  <base href="/protfolio/">
-
-  <!-- Meta information -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Md Mahed - Flutter Developer, Java Developer, Backend Developer. Explore my portfolio to see my projects.">
-  <meta name="keywords" content="Md Mahed, Flutter Developer, Java Developer, Backend Developer, Portfolio">
-  <meta name="author" content="Md Mahed">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Md Mahed">
-  <link rel="apple-touch-icon" sizes="192x192" href="preview_image.jpg">
-  <link rel="apple-touch-icon" sizes="512x512" href="preview_image.jpgg">
-
-  <!-- Android Favicon -->
-  <link rel="manifest" href="manifest.json">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
-  <link rel="shortcut icon" href="favicon.ico">
-
-  <!-- Open Graph / Social Media Tags -->
-  <meta property="og:title" content="Md Mahed - Portfolio">
-  <meta property="og:description" content="Md Mahed - Flutter Developer, Java Developer, Backend Developer. Explore my portfolio to see my projects.">
-  <meta property="og:image" content="preview_image.jpg"> <!-- Replace with your preview image -->
-  <meta property="og:url" content="preview_image.jpg">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Md Mahed - Portfolio">
-  <meta name="twitter:description" content="Md Mahed - Flutter Developer, Java Developer, Backend Developer. Explore my portfolio to see my projects.">
-  <meta name="twitter:image" content="preview_image.jpg"> <!-- Replace with your preview image -->
-
-  <!-- Title -->
-  <title>Md Mahed - Portfolio</title>
-
-  <!-- Bootstrap the Flutter app -->
-  <script src="flutter_bootstrap.js" async></script>
-</head>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MD MAHED — The Digital Universe</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Newsreader:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#03040c;--ink:#eef1ff;--mut:#98a3c4;--or:#ffae4a;--bl:#6ea8ff;--pu:#a78bfa;--line:rgba(140,160,255,.2);--pn:rgba(8,10,26,.78);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 Sora,system-ui,sans-serif}
+#gl{position:fixed;inset:0;width:100%;height:100%;z-index:0;transition:opacity .6s}
+nav{position:fixed;top:calc(env(safe-area-inset-top,0px) + 10px);left:50%;transform:translateX(-50%);z-index:20;display:flex;gap:2px;align-items:center;background:var(--pn);border:1px solid var(--line);border-radius:999px;padding:5px 8px;backdrop-filter:blur(12px);max-width:calc(100% - 20px)}
+nav b{font-size:14px;padding:0 12px;white-space:nowrap}
+nav a{color:var(--mut);text-decoration:none;font-size:13px;padding:6px 11px;border-radius:999px;transition:.2s;white-space:nowrap}
+nav a:hover,nav a.on{color:var(--ink);background:rgba(110,168,255,.15)}
+@media(max-width:760px){nav a:not(.k){display:none}nav{justify-content:space-between;width:calc(100% - 20px)}}
+main{position:relative;z-index:2;pointer-events:none}
+main a,main button,main input,main textarea,main select,.card,.pnl,#cs,.card *{pointer-events:auto}
+section{padding:100px 6vw 60px;max-width:1180px;margin:auto}
+#hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:9vh}
+h1{font-size:clamp(44px,9vw,120px);line-height:.95;margin:0;font-weight:700;letter-spacing:-.02em}
+.role{color:var(--or);font-size:14px;margin:12px 0 18px;letter-spacing:.06em}
+.head{font-family:Newsreader,serif;font-style:italic;font-size:clamp(22px,3.2vw,36px);margin:0 0 10px}
+.lead{max-width:520px;color:var(--mut)}
+.row{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.btn{display:inline-block;border:1px solid var(--bl);color:var(--ink);background:rgba(110,168,255,.1);padding:11px 20px;border-radius:999px;font:600 14px Sora;text-decoration:none;cursor:pointer;transition:.25s}
+.btn:hover{background:var(--bl);color:#04102a;box-shadow:0 0 26px rgba(110,168,255,.5)}
+.btn.o{border-color:var(--or);background:rgba(255,174,74,.12)}.btn.o:hover{background:var(--or);box-shadow:0 0 26px rgba(255,174,74,.5)}
+h2{font-size:clamp(26px,4vw,42px);margin:0 0 10px;letter-spacing:-.01em}
+.note{font-size:13px;color:var(--or);border-left:2px solid var(--or);padding-left:10px;margin:12px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:20px}
+.card{background:var(--pn);border:1px solid var(--line);border-radius:14px;padding:18px;backdrop-filter:blur(10px);transition:.3s;color:inherit;text-align:left;font:inherit;cursor:pointer}
+.card:hover,.card:focus-visible{border-color:var(--bl);transform:translateY(-4px);box-shadow:0 10px 40px rgba(110,168,255,.18);outline:none}
+.card h3{margin:0 0 4px;font-size:17px}.card p{margin:0;color:var(--mut);font-size:14px}.tg{color:var(--or);font-size:12px}
+.shot{height:100px;border-radius:8px;margin-bottom:12px;display:grid;place-items:center;font-size:12px;color:var(--mut);background:radial-gradient(circle at 30% 30%,rgba(167,139,250,.35),transparent 60%),#0a0d22}
+.flt{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.flt button{background:none;border:1px solid var(--line);color:var(--mut);border-radius:999px;padding:6px 13px;cursor:pointer;font:13px Sora}.flt button.on{color:var(--ink);border-color:var(--bl);background:rgba(110,168,255,.15)}
+.tl{border-left:1px solid var(--line);margin:24px 0 0 8px;padding-left:24px}
+.tl div{position:relative;margin-bottom:22px}.tl div::before{content:"";position:absolute;left:-30px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--or);box-shadow:0 0 14px var(--or)}
+.tl b{color:var(--or)}.tl p{margin:2px 0 0;color:var(--mut);font-size:14px}
+form{display:grid;gap:12px;max-width:560px;margin-top:20px}
+input,textarea,select{width:100%;background:#060818;border:1px solid var(--line);color:var(--ink);padding:12px;border-radius:10px;font:inherit}
+:focus-visible{outline:2px solid var(--bl);outline-offset:2px}
+.pnl{position:fixed;right:max(16px,3vw);top:80px;width:min(400px,calc(100vw - 32px));max-height:calc(100vh - 110px);overflow:auto;z-index:30;background:var(--pn);border:1px solid var(--bl);border-radius:16px;padding:22px;backdrop-filter:blur(16px);display:none;box-shadow:0 0 50px rgba(110,168,255,.2)}
+.pnl.open{display:block;animation:up .4s}@keyframes up{from{opacity:0;transform:translateY(14px)}}
+.pnl h3{margin:0;font-size:24px}.chips{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.chips span{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:2px 10px;color:var(--bl)}
+#lab{position:fixed;z-index:15;pointer-events:none;background:var(--pn);border:1px solid var(--line);border-radius:8px;padding:4px 10px;font-size:12px;display:none}
+#cs{position:fixed;left:14px;bottom:calc(env(safe-area-inset-bottom,0px) + 14px);z-index:30}
+#cb{width:56px;height:56px;border-radius:50%;border:1px solid var(--pu);cursor:pointer;background:radial-gradient(circle at 35% 30%,#d9ccff,#7b61e8 45%,#1a1040);box-shadow:0 0 22px rgba(167,139,250,.6);animation:pl 3s infinite}
+@keyframes pl{50%{box-shadow:0 0 36px rgba(167,139,250,.95)}}
+#cw{display:none;width:min(370px,calc(100vw - 28px));height:min(500px,68vh);margin-bottom:10px;background:rgba(5,6,20,.95);border:1px solid var(--pu);border-radius:14px;flex-direction:column;overflow:hidden}
+#cw.open{display:flex}.ch{padding:11px 14px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;font-size:14px}.ch small{display:block;color:var(--or);font-size:11px}
+#cm{flex:1;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:9px}
+.m{max-width:88%;padding:8px 12px;border-radius:12px;font-size:14px;animation:up .3s}.m.b{background:rgba(167,139,250,.14);border:1px solid var(--line)}.m.u{align-self:flex-end;background:rgba(110,168,255,.2)}
+.qs{display:flex;flex-wrap:wrap;gap:6px;padding:0 12px 8px}.qs button{font:12px Sora;background:none;border:1px solid var(--line);color:var(--pu);padding:4px 9px;border-radius:999px;cursor:pointer}
+.cf{display:flex;gap:6px;padding:10px;border-top:1px solid var(--line)}.cf input{flex:1;padding:9px}
+.ic{background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:4px 9px;cursor:pointer;font:12px Sora}.ic.live{border-color:var(--or);box-shadow:0 0 12px var(--or)}
+.end{text-align:center;padding:60px 16px 100px;font-family:Newsreader,serif;font-style:italic;font-size:clamp(18px,2.6vw,26px);color:var(--mut)}
+.wa{position:fixed;right:14px;bottom:calc(env(safe-area-inset-bottom,0px) + 14px);z-index:30;pointer-events:auto}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01ms!important}}
+</style></head>
 <body>
-  <!-- The main content of the app will be rendered here -->
-</body>
-</html>
+<canvas id="gl" aria-hidden="true"></canvas><div id="lab"></div>
+<nav aria-label="Main"><b>MD MAHED</b><a href="#hero" class="k on">Solar System</a><a href="#skills">Skill Planets</a><a href="#galaxy">Project Galaxy</a><a href="#station">Space Station</a><a href="#missions">Missions</a><a href="#contact" class="k">Contact</a></nav>
+<main>
+<section id="hero"><h1>MD MAHED</h1><div class="role">FULL-STACK DEVELOPER · MOBILE &amp; DESKTOP SOFTWARE ENGINEER</div>
+<p class="head">Exploring ideas. Engineering the future.</p>
+<p class="lead">I transform ideas into powerful digital experiences through software engineering, mobile applications, backend systems, and innovative technology.</p>
+<div class="row"><a class="btn o" href="#skills">Explore my universe</a><a class="btn" href="#galaxy">View my projects</a><a class="btn" href="#contact">Contact me</a></div>
+<p class="note" style="max-width:520px">Drag to rotate, scroll to zoom, click a planet to explore its skills.</p></section>
+
+<section id="skills"><h2>Skill planets</h2><p class="lead">Each planet is an area of expertise. Select one to fly there.</p><div class="grid" id="sg"></div></section>
+
+<section id="galaxy"><h2>My project galaxy</h2>
+<p class="note">Stacks come from your brief. Screenshots, features, challenges, contribution, repos and demos are not filled in until verified. Run Mate's repository has not been inspected yet.</p>
+<div class="flt" id="pf"></div><div class="grid" id="pg"></div></section>
+
+<section id="station"><h2>The engineer behind the universe</h2>
+<p class="lead">Full-Stack Developer | Android Developer | Windows Software Developer. Bogura, Bangladesh. 5+ years of experience, journey started in 2019.</p>
+<p class="lead" style="margin-top:12px;font-family:Newsreader,serif;font-size:19px">I am a software developer passionate about creating useful digital products, scalable backend systems, mobile applications, and innovative software solutions. My development journey combines programming, engineering, problem-solving, and continuous learning.</p>
+<h2 style="margin-top:50px;font-size:26px">My journey through technology</h2>
+<div class="tl"><div><b>2019</b><p>Development journey begins.</p></div><div><b>Date to add</b><p>Android development, Flutter engineering, backend and databases, full-stack apps, AI integration, hardware experiments. Add verified dates in <code>TIMELINE</code>.</p></div></div>
+<p class="note">Portrait: add an image URL in <code>PROFILE.photo</code>.</p></section>
+
+<section id="missions"><h2>Missions I can build for you</h2><div class="grid" id="ms"></div></section>
+
+<section id="contact"><h2>READY TO START YOUR NEXT MISSION?</h2>
+<p class="lead">Every great innovation begins with an idea. Let's engineer yours into reality.</p>
+<form id="fm"><input name="name" placeholder="Name" required aria-label="Name"><input name="email" type="email" placeholder="Email" required aria-label="Email">
+<select name="type" aria-label="Project type"><option>Mobile application</option><option>Web application</option><option>Desktop software</option><option>AI and automation</option><option>Hardware and IoT</option></select>
+<input name="budget" placeholder="Budget (optional)" aria-label="Budget"><textarea name="msg" rows="5" placeholder="Project description" required aria-label="Description"></textarea>
+<button class="btn o" type="submit">SEND PROJECT REQUEST</button><p id="fs" class="note" role="status" style="display:none"></p></form>
+<div class="row"><a class="btn o" target="_blank" rel="noopener" href="https://wa.me/8801791960442">WHATSAPP: 01791960442</a><a class="btn o" href="mailto:mahedsr442@gmail.com">EMAIL: mahedsr442@gmail.com</a><a class="btn" target="_blank" rel="noopener" href="https://linkedin.com/in/md-mahed-3146a9228/">CONNECT ON LINKEDIN</a><a class="btn" target="_blank" rel="noopener" href="https://github.com/Mahed420">EXPLORE GITHUB</a><a class="btn" target="_blank" rel="noopener" href="https://www.facebook.com/ami.mahed/">FACEBOOK</a><a class="btn" target="_blank" rel="noopener" href="https://mahed420.github.io/protfolio/">Old portfolio</a></div></section>
+<div class="end">The universe is full of possibilities. I build the technology to explore them.</div>
+</main>
+
+<a class="btn o wa" target="_blank" rel="noopener" href="https://wa.me/8801791960442">WhatsApp me</a>
+<aside class="pnl" id="pn" aria-live="polite"><div style="display:flex;justify-content:space-between;gap:8px"><div><span class="tg" id="pc"></span><h3 id="pt"></h3></div><button class="ic" id="px">Return to universe</button></div><div class="chips" id="pk"></div><p id="pd" style="color:var(--mut);font-size:14px"></p><p class="tg">Related projects</p><div id="pr" style="font-size:14px"></div></aside>
+
+<div id="cs"><div id="cw" role="dialog" aria-label="COSMOS assistant"><div class="ch"><div><b>COSMOS</b> guide to Mahed's universe<small id="cmode"></small></div><span><button class="ic" id="mic">Mic</button> <button class="ic" id="sp">Mute</button> <button class="ic" id="cx" aria-label="Close">x</button></span></div><div id="cm" aria-live="polite"></div><div class="qs" id="qs"></div><form class="cf" id="cf"><input id="ci" placeholder="Ask COSMOS..." aria-label="Message"><button class="btn" style="padding:8px 14px">Send</button></form></div><button id="cb" aria-label="Open COSMOS"></button></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+/* ===== CONFIG: verified content ===== */
+const CFG={chatApi:"" /* server endpoint: {message}->{reply}; keep LLM keys server-side */,formApi:"" /* server endpoint receiving JSON */,photo:""};
+const SK=[
+{k:"Mercury",t:"Programming Languages",l:["Python","Java","PHP","Dart","JavaScript","SQL"],r:12,s:1,sp:.9,c:["#8c8580","#b9b1a8","#6e6862"]},
+{k:"Venus",t:"Frontend Development",l:["HTML5","CSS3","JavaScript","Responsive interfaces"],r:17,s:1.5,sp:.65,c:["#e8c88a","#d9a95f","#f2dba8"],b:1},
+{k:"Earth",t:"Mobile App Development",l:["Flutter","Dart","Native Android","Java","Android SDK","Firebase"],r:22,s:1.6,sp:.5,c:["#1d4e9e","#2f7a46","#e9f2ff"],moon:1},
+{k:"Mars",t:"Backend Development",l:["PHP","Laravel","REST APIs","Authentication","API Integrations"],r:27,s:1.2,sp:.4,c:["#b5502d","#d97b4a","#8e3a1f"]},
+{k:"Jupiter",t:"Database & System Architecture",l:["MySQL","SQL","Firebase","Database Design"],r:36,s:3.2,sp:.25,c:["#c9a27a","#8a5a3a","#efe0c8","#b07a52"],b:1},
+{k:"Saturn",t:"Desktop & Software Development",l:["Windows Applications","Desktop Software","System Integration"],r:45,s:2.7,sp:.18,c:["#e3cf9a","#c8ad74","#f0e2b6"],b:1,ring:1},
+{k:"Uranus",t:"Cloud & Infrastructure",l:["VPS Management","Linux","Deployment","Server Configuration"],r:53,s:2,sp:.12,c:["#9fe3e8","#7cc9d4","#b9f0f2"],b:1},
+{k:"Neptune",t:"AI, Automation & Innovation",l:["AI Integration","Gemini API","Automation","ESP32","IoT"],r:60,s:2,sp:.09,c:["#2a4bd1","#3f6cf0","#1d2f9a"],b:1}];
+const PR=[
+{n:"CashVejo",p:"Fintech Planet",c:"Mobile Applications",t:["Flutter","Dart","Firebase","GetX","REST API","Dio"]},
+{n:"SmartChat",p:"AI Planet",c:"AI & Automation",t:["Laravel","PHP","MySQL","Flutter","Gemini API"]},
+{n:"Run Mate",p:"Application Planet",c:"Mobile Applications",t:["Pending: verify from GitHub repository"]},
+{n:"Orbit-E",p:"Hardware Planet",c:"Hardware & IoT",t:["ESP32","FreeCAD","3D Modeling","3D Printing"]}];
+const MS=[["Full-Stack Web Development","One team member for interface, server and database, so your product ships faster."],["Android Application Development","Reach your customers on the most widely used mobile platform."],["Flutter Cross-Platform Apps","One codebase for Android and iOS, lowering cost and time."],["Windows Desktop Software","Reliable tools for internal operations and customers."],["Backend & REST API Development","Secure, scalable foundations your apps can grow on."],["Database Architecture","Well-designed data that stays fast as you grow."],["AI-Powered Applications","Add assistants and smart features to your product."],["Software Integration","Connect the systems you already use."],["Automation Solutions","Cut repetitive manual work."],["IoT & Embedded Software","Connected devices built on ESP32."]];
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],still=matchMedia('(prefers-reduced-motion:reduce)').matches,mob=innerWidth<760;
+/* ===== DOM ===== */
+$('#sg').innerHTML=SK.map((p,i)=>`<button class="card" data-i="${i}"><span class="tg">${p.k}</span><h3>${p.t}</h3><p>${p.l.join(', ')}</p></button>`).join('');
+$('#ms').innerHTML=MS.map(m=>`<div class="card" style="cursor:default"><h3>${m[0]}</h3><p>${m[1]}</p></div>`).join('');
+const FC=["All","Mobile Applications","Web Applications","Desktop Software","AI & Automation","Hardware & IoT"];let fc="All";
+$('#pf').innerHTML=FC.map(c=>`<button class="${c==fc?'on':''}">${c}</button>`).join('');
+const dp=()=>$('#pg').innerHTML=PR.filter(p=>fc=="All"||p.c==fc).map(p=>`<div class="card" style="cursor:default"><div class="shot">Screenshot to add</div><span class="tg">${p.p} · ${p.c}</span><h3>${p.n}</h3><p>${p.t.join(', ')}</p><p style="margin-top:8px;font-size:12px">Case study, GitHub and demo links: to be added once verified.</p></div>`).join('')||'<p class="lead">No projects in this category yet.</p>';dp();
+$('#pf').onclick=e=>{if(e.target.tagName!='BUTTON')return;fc=e.target.textContent;$$('#pf button').forEach(b=>b.classList.toggle('on',b==e.target));dp()};
+$('#fm').onsubmit=async e=>{e.preventDefault();const s=$('#fs');s.style.display='block';if(!CFG.formApi){const f=Object.fromEntries(new FormData(e.target));location.href='mailto:mahedsr442@gmail.com?subject='+encodeURIComponent(f.type+' project request from '+f.name)+'&body='+encodeURIComponent(f.msg+'\n\nBudget: '+(f.budget||'n/a')+'\nName: '+f.name+'\nEmail: '+f.email);s.textContent='Opening your email app with your request. Nothing is sent until you press Send there. If it does not open, email mahedsr442@gmail.com or WhatsApp 01791960442.';return}
+ try{const r=await fetch(CFG.formApi,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(Object.fromEntries(new FormData(e.target)))});s.textContent=r.ok?'Request sent. Thank you.':'Sending failed. Please try again.'}catch(_){s.textContent='Sending failed. Please try again.'}};
+const so=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){$$('nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+x.target.id));cv.style.opacity=x.target.id=='hero'?1:.3}}),{threshold:.4});$$('section').forEach(x=>so.observe(x));
+/* ===== 3D ===== */
+const cv=$('#gl'),R=new THREE.WebGLRenderer({canvas:cv,antialias:!mob});R.setPixelRatio(Math.min(devicePixelRatio,mob?1.5:2));
+const S=new THREE.Scene(),C=new THREE.PerspectiveCamera(50,1,.1,3000);
+S.add(new THREE.AmbientLight(0x2a3050,.7));const sunL=new THREE.PointLight(0xfff0d0,3.2,0,1.1);S.add(sunL);
+function rnd(a){let s=a;return()=>(s=(s*16807)%2147483647)/2147483647}
+function tex(cols,seed,bands,w){const c=document.createElement('canvas');c.width=512;c.height=256;const x=c.getContext('2d'),r=rnd(seed+7),g=x.createLinearGradient(0,0,0,256);cols.forEach((k,i)=>g.addColorStop(i/(cols.length-1),k));x.fillStyle=g;x.fillRect(0,0,512,256);
+ for(let i=0;i<(bands?44:280);i++){x.globalAlpha=.1+r()*.2;x.fillStyle=cols[Math.floor(r()*cols.length)];if(bands)x.fillRect(0,r()*256,512,2+r()*12);else{x.beginPath();x.ellipse(r()*512,r()*256,4+r()*26,3+r()*14,0,0,7);x.fill()}}x.globalAlpha=1;return new THREE.CanvasTexture(c)}
+function glow(c0){const c=document.createElement('canvas');c.width=c.height=128;const x=c.getContext('2d'),g=x.createRadialGradient(64,64,0,64,64,64);g.addColorStop(0,'rgba(255,255,255,.9)');g.addColorStop(.3,'rgba(255,255,255,.28)');g.addColorStop(1,'rgba(255,255,255,0)');x.fillStyle=g;x.fillRect(0,0,128,128);return new THREE.CanvasTexture(c)}
+/* nebula dome */
+{const c=document.createElement('canvas');c.width=1024;c.height=512;const x=c.getContext('2d'),r=rnd(11);x.fillStyle='#03040c';x.fillRect(0,0,1024,512);
+ [['110,80,230'],['255,140,50'],['60,120,255']].forEach(k=>{for(let i=0;i<9;i++){const px=r()*1024,py=r()*512,rad=70+r()*170,g=x.createRadialGradient(px,py,0,px,py,rad);g.addColorStop(0,`rgba(${k[0]},.2)`);g.addColorStop(1,`rgba(${k[0]},0)`);x.fillStyle=g;x.fillRect(px-rad,py-rad,rad*2,rad*2)}});
+ S.add(new THREE.Mesh(new THREE.SphereGeometry(1500,32,16),new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(c),side:THREE.BackSide})))}
+/* stars */
+{const N=mob?900:2600,p=new Float32Array(N*3),r=rnd(3);for(let i=0;i<N*3;i+=3){const t=r()*6.283,f=Math.acos(2*r()-1),d=600+r()*700;p[i]=d*Math.sin(f)*Math.cos(t);p[i+1]=d*Math.cos(f);p[i+2]=d*Math.sin(f)*Math.sin(t)}
+ const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(p,3));window.stars=new THREE.Points(g,new THREE.PointsMaterial({size:1.7,sizeAttenuation:false,color:0xffffff,transparent:true,opacity:.9}));S.add(stars)}
+/* sun */
+const sun=new THREE.Group(),sm=new THREE.Mesh(new THREE.SphereGeometry(5,48,32),new THREE.MeshBasicMaterial({map:tex(["#fff3a0","#ffb12b","#ff7a12"],1,0)}));sun.add(sm);
+const sg=new THREE.Sprite(new THREE.SpriteMaterial({map:glow(),color:0xffa640,blending:THREE.AdditiveBlending,depthWrite:false}));sg.scale.setScalar(30);sun.add(sg);S.add(sun);
+/* planets */
+const pick=[];
+SK.forEach((p,i)=>{const o=new THREE.Group(),m=new THREE.Mesh(new THREE.SphereGeometry(p.s,mob?24:48,mob?18:36),new THREE.MeshStandardMaterial({map:tex(p.c,i+2,p.b,0),roughness:.9}));o.add(m);m.userData.i=i;pick.push(m);
+ if(p.k=='Earth'){p.cl=new THREE.Mesh(new THREE.SphereGeometry(p.s*1.03,32,24),new THREE.MeshStandardMaterial({map:tex(['#fff','#dfe9f7','#fff'],99,0),transparent:true,opacity:.3,depthWrite:false}));o.add(p.cl);
+  p.mg=new THREE.Group();const mo=new THREE.Mesh(new THREE.SphereGeometry(.4,24,16),new THREE.MeshStandardMaterial({color:0xaaaaaa,roughness:1}));mo.position.x=3;p.mg.add(mo);o.add(p.mg)}
+ if(p.ring){const rg=new THREE.RingGeometry(p.s*1.35,p.s*2.3,96),ps=rg.attributes.position,uv=rg.attributes.uv,v=new THREE.Vector3();for(let k=0;k<ps.count;k++){v.fromBufferAttribute(ps,k);uv.setXY(k,(v.length()-p.s*1.35)/(p.s*.95),0)}
+  const rc=document.createElement('canvas');rc.width=256;rc.height=2;const rx=rc.getContext('2d'),gr=rx.createLinearGradient(0,0,256,0);[[0,'rgba(200,180,140,0)'],[.15,'rgba(210,190,150,.8)'],[.45,'rgba(150,130,100,.5)'],[.52,'rgba(0,0,0,.05)'],[.6,'rgba(220,200,160,.85)'],[.9,'rgba(190,170,130,.5)'],[1,'rgba(190,170,130,0)']].forEach(a=>gr.addColorStop(a[0],a[1]));rx.fillStyle=gr;rx.fillRect(0,0,256,2);
+  p.rm=new THREE.Mesh(rg,new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(rc),side:2,transparent:true,depthWrite:false}));p.rm.rotation.x=Math.PI/2.3;o.add(p.rm)}
+ o.rotation.z=p.k=='Uranus'?1.5:.2;
+ const orb=new THREE.Mesh(new THREE.RingGeometry(p.r-.04,p.r+.04,128),new THREE.MeshBasicMaterial({color:0x6e88ff,transparent:true,opacity:.14,side:2}));orb.rotation.x=Math.PI/2;S.add(orb);
+ p.a=Math.random()*6.28;p.o=o;p.m=m;p.sats=[];S.add(o)});
+/* asteroid belt */
+{const N=mob?500:1600,p=new Float32Array(N*3),r=rnd(21);for(let i=0;i<N*3;i+=3){const a=r()*6.283,d=30.5+r()*3;p[i]=Math.cos(a)*d;p[i+1]=(r()-.5)*.8;p[i+2]=Math.sin(a)*d}
+ const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(p,3));window.belt=new THREE.Points(g,new THREE.PointsMaterial({size:.12,color:0xb8a58a}));S.add(belt)}
+/* meteors */
+const met=[];if(!mob&&!still)for(let i=0;i<3;i++){const l=new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(),new THREE.Vector3(-6,-1.5,0)]),new THREE.LineBasicMaterial({color:0xffffff,transparent:true,opacity:0}));l.userData.t=-Math.random()*8;S.add(l);met.push(l)}
+/* camera control */
+let yaw=0,pitch=.5,dist=78,tgtDist=78,focus=null,ft=new THREE.Vector3(),look=new THREE.Vector3(),mx=0,my=0,drag=0,lx=0,ly=0;
+const ray=new THREE.Raycaster(),mv=new THREE.Vector2(),lab=$('#lab');
+const inHero=()=>scrollY<innerHeight*.7,ui=t=>t.closest&&t.closest('a,button,input,textarea,select,.pnl,#cs,.card');
+addEventListener('pointerdown',e=>{if(!inHero()||ui(e.target))return;drag=1;lx=e.clientX;ly=e.clientY;mdx=e.clientX;mdy=e.clientY});let mdx,mdy;
+addEventListener('pointerup',e=>{if(drag&&Math.hypot(e.clientX-mdx,e.clientY-mdy)<5)hit(e);drag=0});
+addEventListener('pointermove',e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5;if(drag&&!focus){yaw-=(e.clientX-lx)*.005;pitch=Math.max(.1,Math.min(1.3,pitch+(e.clientY-ly)*.004));lx=e.clientX;ly=e.clientY}
+ if(!inHero()||ui(e.target)||drag){lab.style.display='none';return}mv.set(e.clientX/innerWidth*2-1,-(e.clientY/innerHeight)*2+1);ray.setFromCamera(mv,C);const h=ray.intersectObjects(pick)[0];
+ if(h){const p=SK[h.object.userData.i];lab.style.display='block';lab.style.left=e.clientX+14+'px';lab.style.top=e.clientY+10+'px';lab.textContent=p.k+' · '+p.t;cv.style.cursor='pointer'}else{lab.style.display='none';cv.style.cursor=''}});
+addEventListener('wheel',e=>{if(inHero()&&!ui(e.target)&&!focus){tgtDist=Math.max(30,Math.min(130,tgtDist+e.deltaY*.05))}},{passive:true});
+function hit(e){mv.set(e.clientX/innerWidth*2-1,-(e.clientY/innerHeight)*2+1);ray.setFromCamera(mv,C);const h=ray.intersectObjects(pick)[0];if(h)go(h.object.userData.i)}
+function go(i){const p=SK[i];if(scrollY>innerHeight*.5)scrollTo({top:0});focus=i;tgtDist=p.s*4+4;$('#pc').textContent=p.k;$('#pt').textContent=p.t;
+ $('#pk').innerHTML=p.l.map(x=>`<span>${x}</span>`).join('');$('#pd').textContent=`Technologies in the ${p.t.toLowerCase()} area, shown as satellites around the planet.`;
+ $('#pr').innerHTML=PR.filter(q=>q.t.some(t=>p.l.some(l=>t.toLowerCase().includes(l.toLowerCase().split(' ')[0])))).map(q=>q.n).join(', ')||'No verified project link yet.';
+ SK.forEach(q=>{q.sats.forEach(s=>q.o.remove(s));q.sats=[]});
+ p.l.forEach((_,k)=>{const s=new THREE.Mesh(new THREE.SphereGeometry(.18,12,8),new THREE.MeshBasicMaterial({color:0x8fb8ff}));s.userData.k=k;p.o.add(s);p.sats.push(s)});
+ $('#pn').classList.add('open')}
+function back(){focus=null;tgtDist=78;$('#pn').classList.remove('open');SK.forEach(q=>{q.sats.forEach(s=>q.o.remove(s));q.sats=[]})}
+$('#px').onclick=back;addEventListener('keydown',e=>{if(e.key=='Escape')back()});
+$('#sg').onclick=e=>{const c=e.target.closest('.card');if(c)go(+c.dataset.i)};
+function size(){R.setSize(innerWidth,innerHeight,false);C.aspect=innerWidth/innerHeight;C.updateProjectionMatrix()}size();addEventListener('resize',size);
+let T=0;function loop(){requestAnimationFrame(loop);const dt=still?0:.016;T+=dt;
+ SK.forEach(p=>{p.a+=dt*p.sp*.35;p.o.position.set(Math.cos(p.a)*p.r,0,Math.sin(p.a)*p.r);p.m.rotation.y+=dt*.3;if(p.cl)p.cl.rotation.y+=dt*.4;if(p.mg)p.mg.rotation.y+=dt*1.2;
+  p.sats.forEach((s,k)=>{const a=T*.9+k/p.sats.length*6.283,rr=p.s*1.9+.6;s.position.set(Math.cos(a)*rr,Math.sin(a*.5)*.6,Math.sin(a)*rr)})});
+ sm.rotation.y+=dt*.1;belt.rotation.y+=dt*.01;stars.rotation.y+=dt*.002;
+ met.forEach(l=>{l.userData.t+=dt;const t=l.userData.t;if(t<0)return;if(t>2.2){l.userData.t=-3-Math.random()*8;l.position.set((Math.random()-.5)*300,40+Math.random()*80,(Math.random()-.5)*200)}l.position.x+=dt*60;l.position.y-=dt*14;l.material.opacity=Math.sin(Math.min(1,t/2.2)*Math.PI)*.8});
+ dist+=(tgtDist-dist)*.06;
+ if(focus!=null){ft.copy(SK[focus].o.position)}else ft.set(0,0,0);look.lerp(ft,.07);
+ if(!drag&&focus==null&&!still)yaw+=.0006;
+ const px=still?0:mx*.18,py=still?0:my*.1,yw=yaw+px,pt=pitch+py;
+ C.position.set(look.x+Math.sin(yw)*Math.cos(pt)*dist,look.y+Math.sin(pt)*dist,look.z+Math.cos(yw)*Math.cos(pt)*dist);C.lookAt(look);R.render(S,C)}
+loop();
+/* ===== COSMOS ===== */
+const W=$('#cw'),M=$('#cm'),QS=["Who is MD Mahed?","What technologies does he use?","Show me his mobile applications.","Can he develop Windows software?","Tell me about his AI projects.","What services does he offer?","How can I hire him?"];let spk=true;const live=!!CFG.chatApi;
+$('#cmode').textContent=live?'Connected to AI backend':'Demo mode: scripted answers, no AI backend connected';$('#qs').innerHTML=QS.map(q=>`<button>${q}</button>`).join('');
+function say(t,u){const d=document.createElement('div');d.className='m '+(u?'u':'b');M.append(d);if(u){d.textContent=t;M.scrollTop=1e9;return d}let i=0;const iv=setInterval(()=>{d.textContent=t.slice(0,++i);M.scrollTop=1e9;if(i>=t.length)clearInterval(iv)},still?0:10);if(spk&&'speechSynthesis'in window){speechSynthesis.cancel();speechSynthesis.speak(new SpeechSynthesisUtterance(t))}return d}
+function demo(q){q=q.toLowerCase();
+ if(/who|mahed/.test(q))return"MD Mahed is a Full-Stack, Android and Windows software developer based in Bogura, Bangladesh, with 5+ years of experience since 2019.";
+ if(/tech|skill|stack/.test(q))return"Languages: Python, Java, PHP, Dart, JavaScript, SQL. Mobile: Flutter, Android SDK, Firebase. Backend: Laravel, REST APIs. Database: MySQL. Also Linux/VPS deployment, Gemini API and ESP32.";
+ if(/mobile|android|flutter/.test(q))return"Mobile projects listed: CashVejo (Flutter, Firebase, GetX) and Run Mate (details pending verification). Open the Project Galaxy section.";
+ if(/windows|desktop/.test(q))return"Windows desktop software is one of his services. Specific desktop projects haven't been added yet.";
+ if(/ai|gemini/.test(q))return"SmartChat uses Laravel, PHP, MySQL, Flutter and the Gemini API. Neptune in the solar system covers his AI and automation work.";
+ if(/service|offer/.test(q))return"Full-stack web, Android, Flutter, Windows software, REST APIs, databases, AI apps, integration, automation and IoT. See Missions.";
+ if(/hire|contact|work/.test(q))return"WhatsApp: 01791960442. Email: mahedsr442@gmail.com. You can also use the project request form, LinkedIn, Facebook or GitHub in the Contact section.";
+ return"I can answer questions about Mahed's skills, projects and services. I won't guess beyond what's verified."}
+async function ask(q){say(q,1);const b=say('...');try{if(!live)throw 0;const r=await fetch(CFG.chatApi,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:q})});if(!r.ok)throw 0;const j=await r.json();b.remove();say(j.reply)}catch(_){b.remove();say((live?'The AI service is unavailable. ':'')+demo(q))}}
+say("Welcome, explorer! I'm COSMOS, your guide to MD Mahed's digital universe. What would you like to discover?");
+$('#cb').onclick=()=>W.classList.toggle('open');$('#cx').onclick=()=>W.classList.remove('open');$('#qs').onclick=e=>{if(e.target.tagName=='BUTTON')ask(e.target.textContent)};
+$('#cf').onsubmit=e=>{e.preventDefault();const v=$('#ci').value.trim();if(v){$('#ci').value='';ask(v)}};
+$('#sp').onclick=e=>{spk=!spk;e.target.textContent=spk?'Mute':'Unmute';if(!spk)speechSynthesis.cancel()};
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SR)$('#mic').style.display='none';else $('#mic').onclick=e=>{const r=new SR();r.lang='en-US';e.target.classList.add('live');r.onresult=x=>ask(x.results[0][0].transcript);r.onend=()=>e.target.classList.remove('live');r.start()};
+</script></body></html>
